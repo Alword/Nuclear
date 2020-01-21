@@ -7,17 +7,43 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\baseline_add_box_black_24dp.png" />
+    <None Remove="Resources\baseline_apps_black_24dp.png" />
+    <None Remove="Resources\baseline_home_black_24dp.png" />
+    <None Remove="Resources\baseline_mail_outline_black_24dp.png" />
+    <None Remove="Resources\baseline_notifications_none_black_24dp.png" />
+    <None Remove="Resources\baseline_person_add_black_24dp.png" />
+    <None Remove="Resources\baseline_supervised_user_circle_black_24dp.png" />
     <None Remove="Resources\Helvetica.otf" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Models\" />
     <Folder Include="Components\" />
-    <Folder Include="Views\" />
-    <Folder Include="Controllers\" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Resources\baseline_add_box_black_24dp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\baseline_apps_black_24dp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\baseline_home_black_24dp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\baseline_mail_outline_black_24dp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\baseline_notifications_none_black_24dp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\baseline_person_add_black_24dp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\baseline_supervised_user_circle_black_24dp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Resources\Helvetica.otf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>

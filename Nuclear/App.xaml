@@ -4,6 +4,10 @@
              xmlns:local="clr-namespace:Nuclear"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Resources/MainDicrionary.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

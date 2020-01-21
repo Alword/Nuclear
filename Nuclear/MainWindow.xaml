@@ -4,14 +4,26 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Nuclear"
+        xmlns:localV="clr-namespace:Nuclear.Views"
+        xmlns:localVM="clr-namespace:Nuclear.ViewModels"
         mc:Ignorable="d"
         Title="Nuclear" Height="450" Width="800">
     <Window.Resources>
+                
         <Style TargetType="TextBlock" >
             <Setter Property="Margin" Value="10px"/>
             <Setter Property="FontStyle" Value="Normal"/>
             <Setter Property="FontFamily" Value="./Resources/#Helvetica"/>
         </Style>
+
+        <DataTemplate DataType="{x:Type localVM:LibraryViewModel}">
+            <localV:LibraryList/>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type localV:LibraryList}">
+            <!-- View 2 here -->
+        </DataTemplate>
+
     </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
@@ -20,26 +32,59 @@
             <RowDefinition Height="60px"/>
         </Grid.RowDefinitions>
         <Grid Grid.Row="0" Background="#eeeeee">
-            <DockPanel>
-                <TextBlock FontSize="16">МАГАЗИН</TextBlock>
-                <TextBlock FontSize="16">БИБЛИОТЕКА</TextBlock>
-                <TextBlock FontSize="16">СООБЩЕСТВО</TextBlock>
-                <TextBlock FontSize="16">NICKNAME</TextBlock>
-            </DockPanel>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="150"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <DockPanel>
+                        <TextBlock FontSize="16">МАГАЗИН</TextBlock>
+                        <TextBlock FontSize="16">БИБЛИОТЕКА</TextBlock>
+                        <TextBlock FontSize="16">СООБЩЕСТВО</TextBlock>
+                        <TextBlock FontSize="16">STEPAN</TextBlock>
+                    </DockPanel>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0 0 10 0">
+                        <Image Stretch="None" Source="/Resources/baseline_notifications_none_black_24dp.png"/>
+                        <Image Stretch="None" Source="/Resources/baseline_mail_outline_black_24dp.png"/>
+                        <Image Stretch="None" Source="/Resources/baseline_supervised_user_circle_black_24dp.png"/>
+                    </StackPanel>
+                </Grid>
+            </Grid>
         </Grid>
-        <Grid Grid.Row="1"></Grid>
+        <Grid Grid.Row="1">
+            <ContentPresenter Content="{Binding}"/>
+        </Grid>
         <Grid Grid.Row="2" Background="#eeeeee">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="150" />
                 <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="66px" />
+                <ColumnDefinition Width="120px" />
             </Grid.ColumnDefinitions>
             <Grid Grid.Column="0">
-                <TextBlock>Добавить игру</TextBlock>
+                <StackPanel VerticalAlignment="Center" 
+                            Margin="10px"
+                            Orientation="Horizontal">
+                    <Image  Stretch="None" Source="/Resources/baseline_add_box_black_24dp.png"/>
+                    <TextBlock Margin="5 0 0 0" VerticalAlignment="Center" >Добавить игру</TextBlock>
+                </StackPanel>
             </Grid>
-            <Grid Grid.Column="1"></Grid>
+            <Grid Grid.Column="1">
+            
+            </Grid>
             <Grid Grid.Column="2">
-                <TextBlock TextWrapping="Wrap">Чат и друзья</TextBlock>
+                <StackPanel Orientation="Horizontal" 
+                            Margin="0 0 10 0"
+                            HorizontalAlignment="Right">
+                    <TextBlock VerticalAlignment="Center" 
+                               Width="50" 
+                               TextWrapping="Wrap">Чат и друзья</TextBlock>
+                    <Image Stretch="None" 
+                           Margin="0 0 10 0"
+                           Source="/Resources/baseline_person_add_black_24dp.png" />
+                </StackPanel>
             </Grid>
         </Grid>
     </Grid>
