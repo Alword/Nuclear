@@ -31,7 +31,7 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="60px"/>
         </Grid.RowDefinitions>
-        <Grid Grid.Row="0" Background="#eeeeee">
+        <Grid Grid.Row="0" Background="#fff">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
