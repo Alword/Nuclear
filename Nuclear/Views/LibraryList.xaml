@@ -44,28 +44,51 @@
                             <Image Stretch="None" 
                                    Margin="5px"
                                    VerticalAlignment="Center"
-                                   Source="/Resources/baseline_home_black_24dp.png"/>
+                                   Source="/Resources/baseline_search_black_24dp.png"/>
                             <TextBox VerticalAlignment="Center" 
-                                     Width="200px"
+                                     Width="196"
                                      Height="40px"
                                      TextAlignment="Left"
                                      VerticalContentAlignment="Center"
                                      Text="Поиск"/>
                         </StackPanel>
                     </Grid>
-                    <Grid Grid.Column="1">
-                        <Image Stretch="None" 
-                               Source="/Resources/baseline_apps_black_24dp.png"/>
-                    </Grid>
+                    <Image Grid.Column="1" Stretch="None" 
+                               Source="/Resources/baseline_settings_input_component_black_24dp.png"/>
                 </Grid>
-
+                <Grid Height="40px">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="0">
+                        <ComboBox SelectedIndex="0" VerticalContentAlignment="Center">
+                            <ComboBoxItem>
+                                <CheckBox IsChecked="True">Игры</CheckBox>
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <CheckBox>Программы</CheckBox>
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <CheckBox>Видео</CheckBox>
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <CheckBox>Музыка</CheckBox>
+                            </ComboBoxItem>
+                        </ComboBox>
+                    </Grid>
+                    <Image Grid.Column="1" Stretch="None" 
+                               Source="/Resources/baseline_av_timer_black_18dp.png"/>
+                    <Image Grid.Column="2" Stretch="None" 
+                               Source="/Resources/baseline_play_circle_outline_black_18dp.png"/>
+                </Grid>
                 <StackPanel Orientation="Horizontal">
-                    <ComboBox Width="200" Height="24"></ComboBox>
                     <Image></Image>
                     <Image></Image>
                 </StackPanel>
             </StackPanel>
         </Grid>
-        <Grid Grid.Column="1"></Grid>
+        <Grid Grid.Column="1" Background="Gray"></Grid>
     </Grid>
 </UserControl>
