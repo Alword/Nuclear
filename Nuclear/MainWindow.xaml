@@ -10,7 +10,7 @@
         WindowState="Maximized"
         Title="Almanac" Height="450" Width="800">
     <Window.Resources>
-                
+
         <Style TargetType="TextBlock" >
             <Setter Property="Margin" Value="10px"/>
             <Setter Property="FontStyle" Value="Normal"/>
@@ -24,7 +24,6 @@
         <DataTemplate DataType="{x:Type localV:LibraryList}">
             <!-- View 2 here -->
         </DataTemplate>
-
     </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
@@ -73,7 +72,7 @@
                 </StackPanel>
             </Grid>
             <Grid Grid.Column="1">
-            
+
             </Grid>
             <Grid Grid.Column="2">
                 <StackPanel Orientation="Horizontal" 

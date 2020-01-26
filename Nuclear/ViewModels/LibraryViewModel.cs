@@ -20,13 +20,13 @@ namespace Almanac.ViewModels
 
         public LibraryViewModel()
         {
+            ItemContext = new LibraryNewsViewModel();
             Contents = new ObservableCollection<Content>
             {
                 new Content { Name = "Death Squared", IconId = 1,},
                 new Content { Name = "Divinity Original Sin 2",IconId = 2 },
                 new Content { Name = "Dota 2",IconId = 3},
             };
-            ItemContext = new LibraryNewsViewModel();
         }
     }
 }
