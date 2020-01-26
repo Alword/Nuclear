@@ -2,7 +2,7 @@
 using Transmission.API.RPC;
 using Transmission.API.RPC.Entity;
 
-namespace Nuclear.CLI
+namespace Almanac.CLI
 {
     class Program
     {

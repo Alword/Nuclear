@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nuclear", "Nuclear\Nuclear.csproj", "{366D0290-F64E-4EA8-84EC-4602E28492DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Almanac", "Nuclear\Almanac.csproj", "{366D0290-F64E-4EA8-84EC-4602E28492DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nuclear.CLI", "Nuclear.CLI\Nuclear.CLI.csproj", "{7FE47052-BD39-4F94-9C5D-82FE6F8F15DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nuclear.CLI", "Nuclear.CLI\Nuclear.CLI.csproj", "{7FE47052-BD39-4F94-9C5D-82FE6F8F15DF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Almanac.Updater", "Almanac.Updater\Almanac.Updater.csproj", "{6501E199-C098-47D2-B775-BF552CF7A1D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{7FE47052-BD39-4F94-9C5D-82FE6F8F15DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7FE47052-BD39-4F94-9C5D-82FE6F8F15DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7FE47052-BD39-4F94-9C5D-82FE6F8F15DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6501E199-C098-47D2-B775-BF552CF7A1D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6501E199-C098-47D2-B775-BF552CF7A1D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6501E199-C098-47D2-B775-BF552CF7A1D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6501E199-C098-47D2-B775-BF552CF7A1D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
