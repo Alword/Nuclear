@@ -25,7 +25,7 @@ namespace Almanac
         public MainWindow()
         {
             InitializeComponent();
-            DataContext = new LibraryViewModel();
+            DataContext = new LibraryListViewModel();
         }
     }
 }

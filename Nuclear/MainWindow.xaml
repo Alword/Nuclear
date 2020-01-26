@@ -17,7 +17,7 @@
             <Setter Property="FontFamily" Value="./Resources/#Helvetica"/>
         </Style>
 
-        <DataTemplate DataType="{x:Type localVM:LibraryViewModel}">
+        <DataTemplate DataType="{x:Type localVM:LibraryListViewModel}">
             <localV:LibraryList/>
         </DataTemplate>
 

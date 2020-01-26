@@ -11,7 +11,7 @@
              d:DesignHeight="450" d:DesignWidth="800">
 
     <UserControl.Resources>
-        <DataTemplate DataType="{x:Type localVM:LibraryNewsViewModel}">
+        <DataTemplate DataType="{x:Type localVM:LibraryViewModel}">
             <localV:LibraryView/>
         </DataTemplate>
     </UserControl.Resources>
