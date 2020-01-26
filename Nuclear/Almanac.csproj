@@ -8,6 +8,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="AppData\Новая папка\**" />
+    <EmbeddedResource Remove="AppData\Новая папка\**" />
+    <None Remove="AppData\Новая папка\**" />
+    <Page Remove="AppData\Новая папка\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="AppData\icons\1.png" />
+    <None Remove="AppData\icons\2.png" />
+    <None Remove="AppData\icons\3.png" />
     <None Remove="Resources\baseline_add_box_black_24dp.png" />
     <None Remove="Resources\baseline_apps_black_24dp.png" />
     <None Remove="Resources\baseline_av_timer_black_18dp.png" />
@@ -23,7 +33,18 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="AppData\Новая папка\" />
+    <Content Include="AppData\icons\1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="AppData\icons\2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="AppData\icons\3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Components\" />
   </ItemGroup>
 

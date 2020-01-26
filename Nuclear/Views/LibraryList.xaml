@@ -4,8 +4,17 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Almanac.Views"
+             xmlns:localVM="clr-namespace:Almanac.ViewModels"
+             xmlns:localM="clr-namespace:Almanac.Models"
+             xmlns:localV="clr-namespace:Almanac.Views"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <DataTemplate DataType="{x:Type localVM:LibraryNewsViewModel}">
+            <localV:LibraryView/>
+        </DataTemplate>
+    </UserControl.Resources>
+    
     <Grid Background="#f2f2f2">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="270px"/>
@@ -103,18 +112,31 @@
                              Name="listBox1" VerticalAlignment="Top" 
                              ItemsSource="{Binding Contents}">
                         <ListBox.ItemTemplate>
-                            <DataTemplate>
-                                <Grid Margin="3 4 0 0" Height="20">
+                            <DataTemplate DataType="{x:Type localM:Content}">
+                                <Grid Margin="0" Height="20">
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="24" />
-                                        <ColumnDefinition Width="20"/>
+                                        <ColumnDefinition Width="30"/>
                                         <ColumnDefinition Width="*"/>
                                     </Grid.ColumnDefinitions>
-                                    <Image Grid.Column="0"></Image>
-                                    <Grid Grid.Column="1">
-                                        <Image></Image>
+                                    <Grid Grid.Column="0">
+                                        <TextBlock FontSize="9"
+                                                   HorizontalAlignment="Center"
+                                                   VerticalAlignment="Center"
+                                                   Text="100%"/>
                                     </Grid>
-                                    <TextBlock Grid.Column="2" Margin="0 0 0 0" Text="{Binding Name}"></TextBlock>
+
+                                    <Grid Grid.Column="1">
+                                        <!--Icon-->
+                                        <Image Height="20" Width="20" Source="{Binding Icon}"/>
+                                        <Rectangle Width="20" Height="20" VerticalAlignment="Bottom" Fill="Black" Opacity="0.5"/>
+                                        <Rectangle Width="20" Height="10" VerticalAlignment="Bottom" Fill="#74d1ff" Opacity="0.75"/>
+                                    </Grid>
+
+                                    <TextBlock Grid.Column="2" 
+                                               Margin="6 0 0 0" 
+                                               VerticalAlignment="Center"
+                                               Text="{Binding Name}"/>
                                 </Grid>
                             </DataTemplate>
                         </ListBox.ItemTemplate>
@@ -122,6 +144,8 @@
                 </ScrollViewer>
             </Grid>
         </Grid>
-        <Grid Grid.Column="1" Background="Gray"></Grid>
+        <Grid Grid.Column="1" Background="Gray">
+            <ContentControl DataContext="{Binding Path=ItemContext}"/>
+        </Grid>
     </Grid>
 </UserControl>
