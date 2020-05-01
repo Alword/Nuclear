@@ -2,7 +2,7 @@
 using Transmission.API.RPC;
 using Transmission.API.RPC.Entity;
 
-namespace Almanac.CLI
+namespace Rover.CLI
 {
     class Program
     {

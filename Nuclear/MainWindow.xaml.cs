@@ -1,4 +1,4 @@
-﻿using Almanac.ViewModels;
+﻿using Rover.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -15,7 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Almanac
+namespace Rover
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

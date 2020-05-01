@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Almanac.ViewModels
+namespace Rover.ViewModels
 {
     public class LibraryViewModel
     {

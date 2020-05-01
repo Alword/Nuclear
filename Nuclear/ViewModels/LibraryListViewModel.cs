@@ -1,8 +1,8 @@
-﻿using Almanac.Abstractions;
-using Almanac.Models;
+﻿using Rover.Abstractions;
+using Rover.Models;
 using System.Collections.ObjectModel;
 
-namespace Almanac.ViewModels
+namespace Rover.ViewModels
 {
     public class LibraryListViewModel : NotifyPropertyChanged
     {

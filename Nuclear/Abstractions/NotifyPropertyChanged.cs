@@ -4,7 +4,7 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Text;
 
-namespace Almanac.Abstractions
+namespace Rover.Abstractions
 {
     public class NotifyPropertyChanged : INotifyPropertyChanged
     {
